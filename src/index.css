@@ -501,11 +501,11 @@ h1 span {
 }
 
 a {
-  color: #92EAFF;
+  color: #57C1E8;
 }
 
 a:hover {
-  color: #A11EC6;
+  color: #E12726;
 }
 
 .bg-dark-blue-alt{
@@ -516,12 +516,12 @@ a:hover {
   background-color: #003A70;
 }
 
-.bg-mid-purple{
-  background-color: #A11EC6;
+.bg-sauce-red{
+  background-color: #E12726;
 }
 
 .hover\:bg-light-blue:hover{
-  background-color: #92EAFF;
+  background-color: #57C1E8;
 }
 
 .rounded-sm{
@@ -809,7 +809,11 @@ a:hover {
 }
 
 .text-light-blue{
-  color: #92EAFF;
+  color: #57C1E8;
+}
+
+.text-sauce-red{
+  color: #E12726;
 }
 
 .text-mid-grey{
@@ -999,9 +1003,9 @@ a:hover {
   color: #464B54;
 }
 
-.text-sauce-red {
+/* .text-sauce-red {
   color: #E12726;
-}
+} */
 
 .text-sauce-blue {
   color: #003A70;

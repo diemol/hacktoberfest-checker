@@ -14,7 +14,7 @@ export default class MeLinkInfo extends Component {
   render = () => {
     let storeUsernameBtn = (
       <button
-        className="bg-mid-purple text-white hover:bg-light-blue hover:text-mid-blue mx-auto mt-2 h-8 border-none pointer rounded-sm px-4 block saveUser"
+        className="bg-sauce-red text-white hover:bg-light-blue hover:text-mid-blue mx-auto mt-2 h-8 border-none pointer rounded-sm px-4 block saveUser"
         onClick={this.storeUsernameAsMe}
       >
         This is Me

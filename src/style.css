@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-  @apply text-mid-purple;
+  @apply text-sauce-red;
 }
 
 @tailwind components;
@@ -174,10 +174,6 @@ a:hover {
 
 .text-dark-grey {
   color: #464B54;
-}
-
-.text-sauce-red {
-  color: #E12726;
 }
 
 .text-sauce-blue {
