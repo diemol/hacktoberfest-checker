@@ -14,7 +14,7 @@ import Faq from './pages/Faq'
 const App = () => (
   <Fragment>
     <Helmet titleTemplate="%s | Hacktoberfest Checker" />
-    <GithubCorner />
+    {/* <GithubCorner /> */}
     <RegisterReminder />
     <PageWrapper>
       <Router>
