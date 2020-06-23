@@ -1,21 +1,29 @@
+@import "https://use.typekit.net/zmt8tam.css";
+
 @tailwind base;
 
+@font-face {
+  font-family: "museo-sans", "HelveticaNeue", "Helvetica Neue", "serif";
+  font-style: normal;
+  font-display: swap
+}
+
 body {
-  @apply bg-dark-blue p-12 text-mid-grey;
-  font-family: 'Space Mono', monospace;
+  @apply bg-light-grey p-12 text-mid-grey;
+  font-family: "museo-sans", "HelveticaNeue", "Helvetica Neue", "serif";
   padding: 0;
 }
 
 h1 {
-  font-family: "squealerregular", serif;
+  font-family: "museo-sans", "HelveticaNeue", "Helvetica Neue", "serif";
   font-weight: normal;
-  text-shadow: -1px 0 lightblue, 0 1px lightblue, 1px 0 lightblue, 0 -1px lightblue;
+  /* text-shadow: -1px 0 lightblue, 0 1px lightblue, 1px 0 lightblue, 0 -1px lightblue; */
 }
 
 h1 span {
-  font-family: "lazer84regular", serif;
+  font-family: "museo-sans", "HelveticaNeue", "Helvetica Neue", "serif";
   font-weight: normal;
-  text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
+  /* text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow; */
 }
 
 a {
@@ -162,4 +170,16 @@ a:hover {
 .fa-twitter:before {
   content: "\f099";
   vertical-align: inherit;
+}
+
+.text-dark-grey {
+  color: #464B54;
+}
+
+.text-sauce-red {
+  color: #E12726;
+}
+
+.text-sauce-blue {
+  color: #003A70;
 }

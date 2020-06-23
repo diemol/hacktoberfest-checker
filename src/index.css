@@ -1,3 +1,5 @@
+@import "https://use.typekit.net/zmt8tam.css";
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -291,23 +293,6 @@ progress {
  */
 
 /**
- * 1. Prevent padding and border from affecting element width
- * https://goo.gl/pYtbK7
- * 2. Change the default font family in all browsers (opinionated)
- */
-
-html {
-  box-sizing: border-box; /* 1 */
-  font-family: sans-serif; /* 2 */
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-/**
  * Removes the default spacing and border for appropriate elements.
  */
 
@@ -320,7 +305,8 @@ p {
 }
 
 button {
-  background: transparent;
+  background-color: transparent;
+  background-image: none;
   padding: 0;
 }
 
@@ -339,38 +325,50 @@ button:focus {
  */
 
 /**
- * 1. Use the system font stack as a sane default.
+ * 1. Use the user's configured `sans` font-family (with Tailwind's default
+ *    sans-serif font stack as a fallback) as a sane default.
  * 2. Use Tailwind's default "normal" line-height so the user isn't forced
- * to override it to ensure consistency even when using the default theme.
+ *    to override it to ensure consistency even when using the default theme.
  */
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
 /**
- * Allow adding a border to an element by just adding a border-width.
+ * 1. Prevent padding and border from affecting element width.
  *
- * By default, the way the browser specifies that an element should have no
- * border is by setting it's border-style to `none` in the user-agent
- * stylesheet.
+ *    We used to set this in the html element and inherit from
+ *    the parent element for everything else. This caused issues
+ *    in shadow-dom-enhanced elements like <details> where the content
+ *    is wrapped by a div with box-sizing set to `content-box`.
  *
- * In order to easily add borders to elements by just setting the `border-width`
- * property, we change the default border-style for all elements to `solid`, and
- * use border-width to hide them instead. This way our `border` utilities only
- * need to set the `border-width` property instead of the entire `border`
- * shorthand, making our border utilities much more straightforward to compose.
+ *    https://github.com/mozdevs/cssremedy/issues/4
  *
- * https://github.com/tailwindcss/tailwindcss/pull/116
+ *
+ * 2. Allow adding a border to an element by just adding a border-width.
+ *
+ *    By default, the way the browser specifies that an element should have no
+ *    border is by setting it's border-style to `none` in the user-agent
+ *    stylesheet.
+ *
+ *    In order to easily add borders to elements by just setting the `border-width`
+ *    property, we change the default border-style for all elements to `solid`, and
+ *    use border-width to hide them instead. This way our `border` utilities only
+ *    need to set the `border-width` property instead of the entire `border`
+ *    shorthand, making our border utilities much more straightforward to compose.
+ *
+ *    https://github.com/tailwindcss/tailwindcss/pull/116
  */
 
 *,
-*::before,
-*::after {
-  border-width: 0;
-  border-style: solid;
-  border-color: #e2e8f0;
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e2e8f0; /* 2 */
 }
 
 /*
@@ -392,10 +390,6 @@ img {
 }
 
 input::-webkit-input-placeholder {
-  color: #a0aec0;
-}
-
-input::-moz-placeholder {
   color: #a0aec0;
 }
 
@@ -478,24 +472,32 @@ img {
   height: auto;
 }
 
+@font-face {
+  font-family: "museo-sans", "HelveticaNeue", "Helvetica Neue", "serif";
+
+  font-style: normal;
+
+  font-display: swap
+}
+
 body {
-  background-color: rgb(21, 35, 71);
+  background-color: #EDEDEF;
   padding: 3rem;
   color: #99a1b3;
-  font-family: 'Space Mono', monospace;
+  font-family: "museo-sans", "HelveticaNeue", "Helvetica Neue", "serif";
   padding: 0;
 }
 
 h1 {
-  font-family: "squealerregular", serif;
+  font-family: "museo-sans", "HelveticaNeue", "Helvetica Neue", "serif";
   font-weight: normal;
-  text-shadow: -1px 0 lightblue, 0 1px lightblue, 1px 0 lightblue, 0 -1px lightblue;
+  /* text-shadow: -1px 0 lightblue, 0 1px lightblue, 1px 0 lightblue, 0 -1px lightblue; */
 }
 
 h1 span {
-  font-family: "lazer84regular", serif;
+  font-family: "museo-sans", "HelveticaNeue", "Helvetica Neue", "serif";
   font-weight: normal;
-  text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
+  /* text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow; */
 }
 
 a {
@@ -506,379 +508,363 @@ a:hover {
   color: #A11EC6;
 }
 
-.bg-dark-blue-alt {
+.bg-dark-blue-alt{
   background-color: #1d2c4e;
 }
 
-.bg-mid-blue {
-  background-color: #39486E;
+.bg-mid-blue{
+  background-color: #003A70;
 }
 
-.bg-mid-purple {
+.bg-mid-purple{
   background-color: #A11EC6;
 }
 
-.hover\:bg-light-blue:hover {
+.hover\:bg-light-blue:hover{
   background-color: #92EAFF;
 }
 
-.rounded-sm {
+.rounded-sm{
   border-radius: 0.125rem;
 }
 
-.rounded {
+.rounded{
   border-radius: 0.25rem;
 }
 
-.rounded-full {
+.rounded-full{
   border-radius: 9999px;
 }
 
-.border-none {
+.border-none{
   border-style: none;
 }
 
-.border {
+.border{
   border-width: 1px;
 }
 
-.block {
+.block{
   display: block;
 }
 
-.inline-block {
+.inline-block{
   display: inline-block;
 }
 
-.inline {
+.inline{
   display: inline;
 }
 
-.flex {
-  display: -webkit-box;
+.flex{
   display: flex;
 }
 
-.flex-col {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+.flex-col{
+  flex-direction: column;
 }
 
-.flex-wrap {
+.flex-wrap{
   flex-wrap: wrap;
 }
 
-.items-center {
-  -webkit-box-align: center;
-          align-items: center;
+.items-center{
+  align-items: center;
 }
 
-.self-center {
+.self-center{
   align-self: center;
 }
 
-.justify-center {
-  -webkit-box-pack: center;
-          justify-content: center;
+.justify-center{
+  justify-content: center;
 }
 
-.content-center {
+.content-center{
   align-content: center;
 }
 
-.flex-auto {
-  -webkit-box-flex: 1;
-          flex: 1 1 auto;
+.flex-auto{
+  flex: 1 1 auto;
 }
 
-.flex-none {
-  -webkit-box-flex: 0;
-          flex: none;
+.flex-none{
+  flex: none;
 }
 
-.flex-grow {
-  -webkit-box-flex: 1;
-          flex-grow: 1;
+.flex-grow{
+  flex-grow: 1;
 }
 
-.font-light {
+.font-light{
   font-weight: 300;
 }
 
-.font-medium {
+.font-medium{
   font-weight: 500;
 }
 
-.font-extrabold {
+.font-extrabold{
   font-weight: 800;
 }
 
-.h-4 {
+.h-4{
   height: 1rem;
 }
 
-.h-8 {
+.h-8{
   height: 2rem;
 }
 
-.h-12 {
+.h-12{
   height: 3rem;
 }
 
-.h-24 {
+.h-24{
   height: 6rem;
 }
 
-.h-screen {
+.h-screen{
   height: 100vh;
 }
 
-.leading-tight {
+.leading-tight{
   line-height: 1.25;
 }
 
-.my-1 {
+.my-1{
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
 
-.my-4 {
+.my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.mx-4 {
+.mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-.my-5 {
+.my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
-.mx-auto {
+.mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
 
-.mt-1 {
+.mt-1{
   margin-top: 0.25rem;
 }
 
-.mt-2 {
+.mt-2{
   margin-top: 0.5rem;
 }
 
-.mt-4 {
+.mt-4{
   margin-top: 1rem;
 }
 
-.mr-4 {
+.mr-4{
   margin-right: 1rem;
 }
 
-.mb-4 {
+.mb-4{
   margin-bottom: 1rem;
 }
 
-.ml-4 {
+.ml-4{
   margin-left: 1rem;
 }
 
-.mt-5 {
+.mt-5{
   margin-top: 1.25rem;
 }
 
-.mb-6 {
+.mb-6{
   margin-bottom: 1.5rem;
 }
 
-.mr-8 {
+.mr-8{
   margin-right: 2rem;
 }
 
-.mt-16 {
+.mt-16{
   margin-top: 4rem;
 }
 
-.mr-16 {
+.mr-16{
   margin-right: 4rem;
 }
 
-.-mt-4 {
+.-mt-4{
   margin-top: -1rem;
 }
 
-.object-cover {
+.object-cover{
   object-fit: cover;
 }
 
-.overflow-auto {
+.overflow-auto{
   overflow: auto;
 }
 
-.overflow-hidden {
+.overflow-hidden{
   overflow: hidden;
 }
 
-.overflow-y-auto {
+.overflow-y-auto{
   overflow-y: auto;
 }
 
-.p-2 {
+.p-2{
   padding: 0.5rem;
 }
 
-.p-4 {
+.p-4{
   padding: 1rem;
 }
 
-.py-1 {
+.py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
 
-.px-2 {
+.px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.py-4 {
+.py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.px-4 {
+.px-4{
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.px-8 {
+.px-8{
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-.py-12 {
+.py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-.py-20 {
+.py-20{
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
-.pb-2 {
+.pb-2{
   padding-bottom: 0.5rem;
 }
 
-.pb-4 {
+.pb-4{
   padding-bottom: 1rem;
 }
 
-.pl-4 {
+.pl-4{
   padding-left: 1rem;
 }
 
-.pb-8 {
+.pb-8{
   padding-bottom: 2rem;
 }
 
-.static {
+.static{
   position: static;
 }
 
-.absolute {
+.absolute{
   position: absolute;
 }
 
-.shadow-lg {
+.shadow-lg{
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-.text-center {
+.text-center{
   text-align: center;
 }
 
-.text-right {
+.text-right{
   text-align: right;
 }
 
-.text-white {
+.text-white{
   color: #fff;
 }
 
-.text-yellow {
+.text-yellow{
   color: #fff922;
 }
 
-.text-blue-700 {
-  color: #2b6cb0;
-}
-
-.text-light-blue {
+.text-light-blue{
   color: #92EAFF;
 }
 
-.text-mid-purple {
-  color: #A11EC6;
-}
-
-.text-mid-grey {
+.text-mid-grey{
   color: #99a1b3;
 }
 
-.hover\:text-mid-blue:hover {
-  color: #39486E;
+.hover\:text-mid-blue:hover{
+  color: #003A70;
 }
 
-.text-sm {
+.text-sm{
   font-size: 0.875rem;
 }
 
-.text-base {
+.text-base{
   font-size: 1rem;
 }
 
-.text-4xl {
+.text-4xl{
   font-size: 2.25rem;
 }
 
-.text-5xl {
+.text-5xl{
   font-size: 3rem;
 }
 
-.italic {
+.italic{
   font-style: italic;
 }
 
-.no-underline {
+.no-underline{
   text-decoration: none;
 }
 
-.break-words {
+.break-words{
   overflow-wrap: break-word;
 }
 
-.w-4 {
+.w-4{
   width: 1rem;
 }
 
-.w-8 {
+.w-8{
   width: 2rem;
 }
 
-.w-24 {
+.w-24{
   width: 6rem;
 }
 
-.w-64 {
+.w-64{
   width: 16rem;
 }
 
-.w-5\/6 {
+.w-5\/6{
   width: 83.333333%;
 }
 
@@ -935,8 +921,7 @@ a:hover {
   width: 90.51px;
   height: 90.51px;
   overflow: hidden;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-          transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
   background: inherit;
   left: 13.75px;
   text-align: initial;
@@ -950,10 +935,8 @@ a:hover {
   position: absolute;
   width: 118.0000px;
   height: 68.12733176437585px;
-  -webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-34.0637px);
-          transform: rotate(45deg) scaleY(1.7321) translateY(-34.0637px);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
+  transform: rotate(45deg) scaleY(1.7321) translateY(-34.0637px);
+  transform-origin: 0 0;
   background: inherit;
 }
 
@@ -992,14 +975,12 @@ a:hover {
 .faqs {
   background-color: #1d2c4e;
   display: block;
-  -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
 
 .pull-request:hover {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  -webkit-transform: scale(1.04, 1.04);
-          transform: scale(1.04, 1.04);
+  transform: scale(1.04, 1.04);
 }
 
 /* better positions facebook and twitter icons */
@@ -1014,42 +995,54 @@ a:hover {
   vertical-align: inherit;
 }
 
-@media (min-width: 768px) {
+.text-dark-grey {
+  color: #464B54;
+}
 
-  .md\:mr-8 {
+.text-sauce-red {
+  color: #E12726;
+}
+
+.text-sauce-blue {
+  color: #003A70;
+}
+
+@media (min-width: 768px){
+
+  .md\:mr-8{
     margin-right: 2rem;
   }
 
-  .md\:py-4 {
+  .md\:py-4{
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
 
-  .md\:py-8 {
+  .md\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
-  .md\:pt-16 {
+  .md\:pt-16{
     padding-top: 4rem;
   }
 
-  .md\:text-6xl {
+  .md\:text-6xl{
     font-size: 4rem;
   }
 
-  .md\:w-3\/5 {
+  .md\:w-3\/5{
     width: 60%;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px){
 
-  .lg\:w-1\/2 {
+  .lg\:w-1\/2{
     width: 50%;
   }
 
-  .lg\:w-1\/3 {
+  .lg\:w-1\/3{
     width: 33.333333%;
   }
 }
