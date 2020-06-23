@@ -150,7 +150,7 @@ a:hover {
 
 .pull-request,
 .faqs {
-  @apply bg-dark-blue-alt block;
+  @apply bg-mid-blue block;
 
   transition: all .3s ease-out;
 }
@@ -170,12 +170,4 @@ a:hover {
 .fa-twitter:before {
   content: "\f099";
   vertical-align: inherit;
-}
-
-.text-dark-grey {
-  color: #464B54;
-}
-
-.text-sauce-blue {
-  color: #003A70;
 }

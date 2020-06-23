@@ -6,7 +6,7 @@ const SiteTitle = () => (
       <h1 className="text-dark-grey text-4xl md:text-6xl">
         OpenSource<span className="text-sauce-red">thon</span>
       </h1>
-      <small className="block text-right -mt-4 mr-8 text-sauce-blue text-base italic">
+      <small className="block text-right -mt-4 mr-8 text-mid-blue text-base italic">
         #HFH2020 Edition
       </small>
     </a>

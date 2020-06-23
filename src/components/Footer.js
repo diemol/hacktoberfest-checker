@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => (
   <footer className="text-sm px-8 text-center flex-none py-4">
-    <p className="text-white">
+    <p className="text-dark-grey">
       Disclaimer: This site is fan made and not affiliated with{' '}
       <a
         href="https://hacktoberfest.digitalocean.com/"

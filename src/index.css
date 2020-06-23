@@ -508,10 +508,6 @@ a:hover {
   color: #E12726;
 }
 
-.bg-dark-blue-alt{
-  background-color: #1d2c4e;
-}
-
 .bg-mid-blue{
   background-color: #003A70;
 }
@@ -804,12 +800,20 @@ a:hover {
   color: #fff;
 }
 
-.text-yellow{
-  color: #fff922;
+.text-light-grey{
+  color: #EDEDEF;
+}
+
+.text-dark-grey{
+  color: #464B54;
 }
 
 .text-light-blue{
   color: #57C1E8;
+}
+
+.text-mid-blue{
+  color: #003A70;
 }
 
 .text-sauce-red{
@@ -977,7 +981,7 @@ a:hover {
 
 .pull-request,
 .faqs {
-  background-color: #1d2c4e;
+  background-color: #003A70;
   display: block;
   transition: all .3s ease-out;
 }
@@ -997,18 +1001,6 @@ a:hover {
 .fa-twitter:before {
   content: "\f099";
   vertical-align: inherit;
-}
-
-.text-dark-grey {
-  color: #464B54;
-}
-
-/* .text-sauce-red {
-  color: #E12726;
-} */
-
-.text-sauce-blue {
-  color: #003A70;
 }
 
 @media (min-width: 768px){
