@@ -9,7 +9,7 @@ const PullRequestInfo = ({ pullRequest }) => (
       </span>
       {pullRequest.is_pending && <em className="text-mid-grey"> Pending</em>}
     </div>
-    <div>
+    <div className="text-light-grey">
       {pullRequest.title} on {pullRequest.created_at}
     </div>
   </div>
