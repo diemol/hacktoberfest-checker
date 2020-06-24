@@ -19,7 +19,7 @@ const findPrs = (github, username) => {
           label => label.name.toLowerCase() === 'hacktoberfest'
         );
 
-        const weekOld = moment().subtract(7, 'days').startOf('day');
+        const fewDaysOld = moment().subtract(2, 'days').startOf('day');
 
         return {
           has_hacktoberfest_label: hacktoberFestLabels,
@@ -29,7 +29,7 @@ const findPrs = (github, username) => {
           title: event.title,
           url: event.html_url,
           created_at: moment(event.created_at).format('MMMM Do YYYY'),
-          is_pending: moment(event.created_at).isAfter(weekOld),
+          is_pending: moment(event.created_at).isAfter(fewDaysOld),
           user: {
             login: event.user.login,
             url: event.user.html_url
