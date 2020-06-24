@@ -3,7 +3,7 @@ import pullRequestAmount from '../../pullRequestAmount';
 const messages = [
   "It's not too late to start!",
   'Off to a great start, keep going!',
-  "Nice! Now, don't stop!",
+  // "Nice! Now, don't stop!",
   'So close!',
   'Way to go!',
   "Now you're just showing off!"

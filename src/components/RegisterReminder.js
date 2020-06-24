@@ -20,7 +20,7 @@ const RegisterReminder = () => (
       >
         add your name
       </a>{' '}
-      on the OpenSourcethon row, "Team Members" column to be eligible for the tee!
+      on the OpenSourcethon row, "Team Members" column to be eligible for the t-shirt!
     </span>
   </div>
 );

@@ -1,3 +1,3 @@
-const pullRequestAmount = 4;
+const pullRequestAmount = 3;
 
 export default pullRequestAmount;
