@@ -114,7 +114,7 @@ export default class PullRequests extends Component {
             ))}
         </div>
         {!isComplete && <IssuesLink />}
-        <MeLinkInfo username={username} />
+        {/* <MeLinkInfo username={username} /> */}
       </Fragment>
     );
   };
