@@ -9,7 +9,7 @@ export default [
     },
     {
         question: "How do I win?",
-        answer: "To qualify to get some swag, you need to submit at least 3 PRs to any Open Source project. Let's try to use this opportunity and give back some meaningful contributions to Open Source."
+        answer: "To qualify to get some swag, you need to submit at least 3 PRs to any Open Source project. Let's try to use this opportunity and give back some meaningful contributions to Open Source. PRs to the Sauce Labs GitHub org do not count."
     },
     {
         question: "What do I get if I win?",
