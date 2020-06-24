@@ -1,4 +1,5 @@
 import React from 'react';
+import sauceLogo from './saucelabs_logo_color.png';
 
 const Footer = () => (
   <footer className="text-sm px-8 text-center flex-none py-4">
@@ -45,6 +46,16 @@ const Footer = () => (
         href="/Faq"
       >
       <i class="fas fa-question"/> FAQs
+      </a>
+    </div>
+    <div className="p-2 mt-4" id="sauce-logo">
+      <a
+        rel="noopener noreferrer"
+        className="px-2 py-1 pointer no-underline"
+        target="_blank"
+        href="https://saucelabs.com/"
+      >
+        <img className="inline object-cover" src={sauceLogo} alt="Sauce Labs" />
       </a>
     </div>
   </footer>
