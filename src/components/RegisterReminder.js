@@ -14,13 +14,13 @@ const RegisterReminder = () => (
     <span className="text-md leading-tight ml-4 mr-16 md:mr-8">
       Remember to{' '}
       <a
-        href="https://hacktoberfest.digitalocean.com/profile"
+        href="https://wiki.saucelabs.com/display/AD/2020+Sauce+Labs+Hackathon+-+HFH+%28Hacking+From+Home%29+Edition"
         target="_blank"
         rel="noopener noreferrer"
       >
-        register
+        add your name
       </a>{' '}
-      to be eligible for the tee!
+      on the OpenSourcethon row, "Team Members" column to be eligible for the tee!
     </span>
   </div>
 );
