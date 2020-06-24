@@ -1,4 +1,5 @@
 import React from 'react';
+import movingBot from './sauce_bot_moving.gif';
 
 const SiteTitle = () => (
   <div className="text-center">
@@ -9,6 +10,7 @@ const SiteTitle = () => (
       <small className="block text-right -mt-4 mr-8 text-mid-blue text-base italic">
         #HFH2020 Edition
       </small>
+      <img className="inline rounded-full h-24 w-24 object-cover" src={movingBot} width="120" height="120" alt="Loading icon" />
     </a>
   </div>
 );
