@@ -20,7 +20,7 @@ const getTimeMessage = () => {
   // }
 
   // return `There are ${daysLeft} days remaining!`;
-  return 'You have until June 26th midnight to submit your PRs!';
+  return 'Only PRs submitted during the Hackathon will count!';
 };
 
 export default getTimeMessage;
