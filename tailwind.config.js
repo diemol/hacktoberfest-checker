@@ -10,7 +10,8 @@ module.exports = {
         'mid-purple': '#A11EC6',
         'sauce-red': '#E12726',        
         'mid-grey': '#99a1b3',
-        'yellow': '#fff922'
+        'yellow': '#fff922',
+        'white': '#FFFFFF'
       }
     }
   },

@@ -491,7 +491,7 @@ img {
 }
 
 body {
-  background-color: #EDEDEF;
+  background-color: #FFFFFF;
   padding: 3rem;
   color: #99a1b3;
   font-family: "museo-sans", "HelveticaNeue", "Helvetica Neue", "serif";
@@ -807,7 +807,7 @@ a:hover {
 }
 
 .text-white{
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .text-light-grey{

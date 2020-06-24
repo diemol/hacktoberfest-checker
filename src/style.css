@@ -9,7 +9,7 @@
 }
 
 body {
-  @apply bg-light-grey p-12 text-mid-grey;
+  @apply bg-white p-12 text-mid-grey;
   font-family: "museo-sans", "HelveticaNeue", "Helvetica Neue", "serif";
   padding: 0;
 }
