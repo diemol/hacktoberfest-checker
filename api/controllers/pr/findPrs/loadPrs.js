@@ -23,7 +23,8 @@ const loadPrs = (github, username) =>
           return reject();
         }
 
-        const pullRequestData = res.data.items;
+        // Filtering PRs from the Sauce GitHub org
+        const pullRequestData = res.data.items.filter(pr => !pr.url.includes('repos/saucelabs/'));
         if (github.hasNextPage(res)) {
           getNextPage(res, github, pullRequestData).then(pullRequestData =>
             resolve(pullRequestData)
