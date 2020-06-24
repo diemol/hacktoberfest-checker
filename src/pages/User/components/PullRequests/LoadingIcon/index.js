@@ -1,5 +1,5 @@
 import React from 'react';
-import loadingIcon from './loading-icon3.gif';
+import loadingIcon from './sauce_bot_moving.gif';
 
 const LoadingIcon = () => (
   <div className="text-center rounded-full overflow-hidden">
