@@ -1,14 +1,18 @@
 export default [
     {
         question: "Why do some PRs have 'Pending' next to them?",
-        answer: "There is a grace period this year which means that a PR must be open (or merged) for at least a week in order to give maintainers the chance to mark issues as invalid. Therefore, the PR will be marked as 'Pending' until that grace period has expired."
+        answer: "There is a grace period this year which means that a PR must be open (or merged) for a couple of days in order to give maintainers the chance to mark issues as invalid. This avoids the scenario where a PR is opened to make it count in the Hackathon and then it gets closed."
     },
     {
-        question: "Why do some PRs show outside of October?",
-        answer: "If you've submitted a PR on the last day of September or the first day of November, there is a chance of it counting if it is October in any timezone."
+        question: "Why do some PRs show outside the hackathon period?",
+        answer: "We are humans, we are not perfect 🤷‍♀️ There is a chance of a PR being counted it counting if it is in the hackathon period in any timezone."
     },
     {
-        question: "Why is this project needed if Hacktoberfest's `Profile` now shows your progress?",
-        answer: "While it is true you can see your progress on Hacktoberfest's official website at https://hacktoberfest.digitalocean.com/profile it requires that you authenticate with Github. Hacktoberfest Checker doesn't require authentication so you can check on your own progress, or your mates progress, without needing to log in. Plus this is still a really fun and rewarding project to work on and we've done it for years before they ever thought to do it themselves :-)"
+        question: "How do I win?",
+        answer: "To qualify to get some swag, you need to submit at least 3 PRs to any Open Source project. Let's try to use this opportunity and give back some meaningful contributions to Open Source."
+    },
+    {
+        question: "What do I get if I win?",
+        answer: "The top 3 contributors will get a personalised Open Source special edition t-shirt! (See sample below). All the other participants who make the 3 PRs cut, will get some unique swag as well."
     }
 ]
