@@ -10,15 +10,15 @@ const messages = [
 ];
 
 const getResultMessage = pullRequestCount => {
-  const currentMonth = new Date().getMonth();
+  // const currentMonth = new Date().getMonth();
 
-  if (currentMonth < 9) {
-    return "Last year's result.";
-  }
+  // if (currentMonth < 9) {
+  //   return "Last year's result.";
+  // }
 
-  if (currentMonth > 9) {
-    return "This year's result.";
-  }
+  // if (currentMonth > 9) {
+  //   return "This year's result.";
+  // }
 
   const isShowingOff = pullRequestCount > pullRequestAmount;
 
