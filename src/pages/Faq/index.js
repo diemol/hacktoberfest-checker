@@ -64,6 +64,22 @@ const Faq = () => (
             >
               jabref - Graphical Java application for managing BibTeX and biblatex (.bib) databases 
             </a>            
+            <br></br>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/openSUSE/osem/labels/good%20first%20issue"
+            >
+              osem - An event management tool tailored to Free and Open Source Software conferences
+            </a>            
+            <br></br>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/Automattic/wp-calypso/labels/good%20first%20issue"
+            >
+              wp-calypso - The JavaScript and API powered WordPress.com 
+            </a>            
           </p>
         </div>
       </div>
