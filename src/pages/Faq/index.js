@@ -104,6 +104,38 @@ const Faq = () => (
             >
               TeacherFund_next - A website to fund teachers discretionary spending because the government sucks at it
             </a>            
+            <hr></hr>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/up-for-grabs/up-for-grabs.net/labels/up-for-grabs"
+            >
+              up-for-grabs.net - This is a list of projects which have curated tasks specifically for new contributors
+            </a>            
+            <hr></hr>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/swapagarwal/swag-for-dev/labels/good%20first%20issue"
+            >
+              swag-for-dev - 😎 swag opportunities for developers 
+            </a>            
+            <hr></hr>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/rust-lang/rust/labels/E-easy"
+            >
+              rust - Empowering everyone to build reliable and efficient software
+            </a>            
+            <hr></hr>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/tldr-pages/tldr/labels/help%20wanted"
+            >
+              tldr - Collaborative cheatsheets for console commands 
+            </a>            
           </p>
         </div>
       </div>
