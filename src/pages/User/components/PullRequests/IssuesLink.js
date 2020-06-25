@@ -19,6 +19,14 @@ const IssuesLink = () => (
         here
       </a>{' '}
       and get hacking!
+      <br></br>
+      There is a more detailed list of issues at the {' '}
+      <a
+        href="/faq"
+      >
+        FAQs
+      </a>{' '}
+      section!
     </div>
   </div>
 );
