@@ -136,6 +136,38 @@ const Faq = () => (
             >
               tldr - Collaborative cheatsheets for console commands 
             </a>            
+            <hr></hr>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/cookiecutter/cookiecutter/labels/please-help"
+            >
+              cookiecutter - A command-line utility that creates projects from cookiecutters (project templates), e.g. Python package projects, VueJS projects
+            </a>            
+            <hr></hr>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/ollelauribostrom/rebus/issues"
+            >
+              rebus - 🌟 👣 Take your first steps as an open source contributor
+            </a>            
+            <hr></hr>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/microsoft/TypeScript/labels/good%20first%20issue"
+            >
+              TypeScript - TypeScript is a superset of JavaScript that compiles to clean JavaScript output
+            </a>            
+            <hr></hr>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/kognise/water.css/labels/good%20first%20issue"
+            >
+              water.css - A drop-in collection of CSS styles to make simple websites just a little nicer
+            </a>            
           </p>
         </div>
       </div>
