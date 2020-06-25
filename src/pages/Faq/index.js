@@ -96,6 +96,14 @@ const Faq = () => (
             >
               freeCodeCamp - freeCodeCamp.org's open source codebase and curriculum. Learn to code at home
             </a>            
+            <hr></hr>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/teacherfund/TeacherFund_next/labels/good%20first%20issue"
+            >
+              TeacherFund_next - A website to fund teachers discretionary spending because the government sucks at it
+            </a>            
           </p>
         </div>
       </div>
