@@ -22,7 +22,7 @@ const Faq = () => (
               target="_blank"
               href="https://github.com/webdriverio/webdriverio/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Afirst-timers-only"
             >
-              WebdriverIO
+              WebdriverIO - Next-gen browser and mobile automation test framework for Node.js 
             </a>
             <br></br>
             <a 
@@ -30,7 +30,7 @@ const Faq = () => (
               target="_blank"
               href="https://github.com/Human-Connection/Human-Connection/labels/good%20first%20issue"
             >
-              Human-Connection
+              Human-Connection - Free and open-source social network for active citizenship. 
             </a>
             <br></br>
             <a 
@@ -38,8 +38,32 @@ const Faq = () => (
               target="_blank"
               href="https://github.com/home-assistant/home-assistant.io/labels/Help%20wanted"
             >
-              home-assistant.io
+              home-assistant.io - Home Assistant User documentation 
             </a>
+            <br></br>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/octokit/octokit.net/labels/up-for-grabs"
+            >
+              octokit.net - A GitHub API client library for .NET 
+            </a>
+            <br></br>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/robstoll/atrium/issues"
+            >
+              atrium - A multiplatform assertion library for Kotlin 
+            </a>
+            <br></br>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/JabRef/jabref/labels/good%20first%20issue"
+            >
+              jabref - Graphical Java application for managing BibTeX and biblatex (.bib) databases 
+            </a>            
           </p>
         </div>
       </div>
