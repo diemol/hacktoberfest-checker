@@ -32,6 +32,14 @@ const Faq = () => (
             >
               Human-Connection
             </a>
+            <br></br>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/home-assistant/home-assistant.io/labels/Help%20wanted"
+            >
+              home-assistant.io
+            </a>
           </p>
         </div>
       </div>
