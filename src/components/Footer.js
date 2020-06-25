@@ -13,10 +13,22 @@ const Footer = () => (
     </p>
     <p style={{padding: "15px 0"}}>
       <p>
-      <a href="https://github.com/seleniumhq/selenium/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">Selenium Issue List</a>
+        <a 
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://github.com/seleniumhq/selenium/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc"
+        >
+          Selenium Issue List
+        </a>
       </p>
       <p>
-      <a href="https://github.com/webdriverio/webdriverio/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22good+first+pick%22">"Good First Pick" WebdriverIO</a>
+        <a 
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://github.com/webdriverio/webdriverio/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22good+first+pick%22"
+        >
+          "Good First Pick" WebdriverIO
+        </a>
       </p>
     </p>
     <b className="text-dark-grey">Need Support?</b>
@@ -32,7 +44,13 @@ const Footer = () => (
     </p>
     <p style={{padding: "15px 0"}}>
       <p>
-      <a href="https://drive.google.com/file/d/1ee2nVN_5mp32L-ENErRJyHVkDcpvtDST/view?usp=sharing">"Contribute to WebdriverIO" Workshop Recordings</a>
+        <a 
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://drive.google.com/file/d/1ee2nVN_5mp32L-ENErRJyHVkDcpvtDST/view?usp=sharing"
+        >
+          "Contribute to WebdriverIO" Workshop Recordings
+        </a>
       </p>
     </p>
     <b className="text-dark-grey">
