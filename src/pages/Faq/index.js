@@ -16,7 +16,7 @@ const Faq = () => (
           </h3>
           <p className="text-light-grey overflow-auto">
             Sure, look at these ones! 
-            <br></br>
+            <hr></hr>
             <a 
               rel="noopener noreferrer"
               target="_blank"
@@ -24,7 +24,7 @@ const Faq = () => (
             >
               WebdriverIO - Next-gen browser and mobile automation test framework for Node.js 
             </a>
-            <br></br>
+            <hr></hr>
             <a 
               rel="noopener noreferrer"
               target="_blank"
@@ -32,7 +32,7 @@ const Faq = () => (
             >
               Human-Connection - Free and open-source social network for active citizenship. 
             </a>
-            <br></br>
+            <hr></hr>
             <a 
               rel="noopener noreferrer"
               target="_blank"
@@ -40,7 +40,7 @@ const Faq = () => (
             >
               home-assistant.io - Home Assistant User documentation 
             </a>
-            <br></br>
+            <hr></hr>
             <a 
               rel="noopener noreferrer"
               target="_blank"
@@ -48,7 +48,7 @@ const Faq = () => (
             >
               octokit.net - A GitHub API client library for .NET 
             </a>
-            <br></br>
+            <hr></hr>
             <a 
               rel="noopener noreferrer"
               target="_blank"
@@ -56,7 +56,7 @@ const Faq = () => (
             >
               atrium - A multiplatform assertion library for Kotlin 
             </a>
-            <br></br>
+            <hr></hr>
             <a 
               rel="noopener noreferrer"
               target="_blank"
@@ -64,7 +64,7 @@ const Faq = () => (
             >
               jabref - Graphical Java application for managing BibTeX and biblatex (.bib) databases 
             </a>            
-            <br></br>
+            <hr></hr>
             <a 
               rel="noopener noreferrer"
               target="_blank"
@@ -72,13 +72,29 @@ const Faq = () => (
             >
               osem - An event management tool tailored to Free and Open Source Software conferences
             </a>            
-            <br></br>
+            <hr></hr>
             <a 
               rel="noopener noreferrer"
               target="_blank"
               href="https://github.com/Automattic/wp-calypso/labels/good%20first%20issue"
             >
               wp-calypso - The JavaScript and API powered WordPress.com 
+            </a>     
+            <hr></hr>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/phpmyadmin/phpmyadmin/labels/newbie"
+            >
+              phpmyadmin - A web interface for MySQL and MariaDB
+            </a>            
+            <hr></hr>
+            <a 
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/freeCodeCamp/freeCodeCamp/labels/help%20wanted"
+            >
+              freeCodeCamp - freeCodeCamp.org's open source codebase and curriculum. Learn to code at home
             </a>            
           </p>
         </div>
